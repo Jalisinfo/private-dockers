@@ -8,7 +8,7 @@ app = FastAPI()
 # --- Redis connection ---
 r = redis.Redis(
     host="jmc-redis-master.redis.svc.cluster.local",  #"jmc-redis-master.redis.svc.cluster.local" # 172.16.0.4 works from outside the cluster with IP.
-    port= 6379, #30952,-> this is the nodePort to acces from outside cluster. 
+    port= 6379, #30952,-> this is the nodePort to acces from outside cluster. TESTING the commit...
     decode_responses=True
 )
 
